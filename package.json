@@ -1,0 +1,20 @@
+{
+  "name": "pern-stack",
+  "version": "1.0.0",
+  "description": "Postgresql, Express, React, Notejs Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file .env --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0"
+  }
+}
