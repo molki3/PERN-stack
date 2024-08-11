@@ -17,7 +17,7 @@ export const getTask = async (req, res) => {
 
     try {
         const {rows} = await pool.query(`SELECT * FROM task WHERE id='${id}';`);
-        return res.json(rows);
+        return res.json(rows[0]);
     } catch (error) {
         // Error Middleware
         next(error);
